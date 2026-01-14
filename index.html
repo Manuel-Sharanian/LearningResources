@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Կրթական Ռեսուրս</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="nkarner/favicon.png">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const link = card.getAttribute('data-link');
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Կրթական Ռեսուրս</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="resources.html">Ռեսուրսներ</a></li>
+                <li><a href="short.html">Հակիրճ</a></li>
+                <li><a href="#about">Մեր Մասին</a></li>
+                <li><a href="trainings.html">Դասավանդում</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('nkarner/learning-background.jpg');"></div>
+            <div class="slide" style="background-image: url('nkarner/yellow-background.jpg');"></div>
+            <div class="slide" style="background-image: url('nkarner/green-background.jpg');"></div>
+            <div class="slide" style="background-image: url('nkarner/books-background.jpg');"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Կրթությունը ապագայի հիմքն է</h1>
+            <p>Թվային ռեսուրսներ՝ գիտելիքը ամրապնդելու համար</p>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2 class="section-title">Ռեսուրսներ</h2>
+        <div class="services-grid">
+            <div class="service-card" data-link="https://wayground.com/join/quiz/691658ed5d5a8e2b7a2b129f/start?studentShare=true">
+                <i class="fa-solid fa-lightbulb service-icon"></i>
+                <h3>1</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://docs.google.com/forms/d/e/1FAIpQLSeSZUwgT9SDhAoCI78J1-tZkUGpYafXxFD897LLGxTUHH3bug/viewform">
+                <i class="fa-solid fa-pen-to-square service-icon"></i>
+                <h3>2</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://wayground.com/join/quiz/691658ed5d5a8e2b7a2b129f/start?studentShare=true">
+                <i class="fa-solid fa-server service-icon"></i>
+                <h3>3</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://docs.google.com/forms/d/e/1FAIpQLSeSZUwgT9SDhAoCI78J1-tZkUGpYafXxFD897LLGxTUHH3bug/viewform">
+                <i class="fa-solid fa-pen-to-square service-icon"></i>
+                <h3>4</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://wayground.com/join/quiz/691658ed5d5a8e2b7a2b129f/start?studentShare=true">
+                <i class="fa-solid fa-lightbulb service-icon"></i>
+                <h3>5</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://docs.google.com/forms/d/e/1FAIpQLSeSZUwgT9SDhAoCI78J1-tZkUGpYafXxFD897LLGxTUHH3bug/viewform">
+                <i class="fa-solid fa-server service-icon"></i>
+                <h3>6</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://wayground.com/join/quiz/691658ed5d5a8e2b7a2b129f/start?studentShare=true">
+                <i class="fa-solid fa-lightbulb service-icon"></i>
+                <h3>7</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+            <div class="service-card" data-link="https://docs.google.com/forms/d/e/1FAIpQLSeSZUwgT9SDhAoCI78J1-tZkUGpYafXxFD897LLGxTUHH3bug/viewform">
+                <i class="fa-solid fa-server service-icon"></i>
+                <h3>8</h3>
+                <p>Գիտելիքի Ամրապնդում</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OUR PRODUCTS -->
+    <section class="products-section" id="products">
+        <div class="products-head">
+            <h2 class="section-title">Օգտակար Տեսանյութեր</h2>
+            <a class="btn-view-all" href="short.html">Տեսնել Բոլորը</a>
+        </div>
+
+        <div class="products-carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="products-track">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/CloudModels.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="product-body">
+                        <h3>Ամպային Մոդելներ</h3>
+                        <p>Ամպային մոդելների մասին կարճ նկարագրություն</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/PaaS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="product-body">
+                        <h3>PaaS</h3>
+                        <p>PaaS Տեխնոլոգիա</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/SaaS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="product-body">
+                        <h3>SaaS</h3>
+                        <p>SaaS Տեխնոլոգիա</p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/CloudModels.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="product-body">
+                        <h3>Ամպային Մոդելներ</h3>
+                        <p>Ամպային մոդելների մասին կարճ նկարագրություն</p>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/PaaS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="product-body">
+                        <h3>PaaS</h3>
+                        <p>PaaS Տեխնոլոգիա</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next">&#10095;</button> <!-- «›» -->
+        </div>
+    </section>
+
+
+
+    <section id="footer" class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col" id="about">
+                <h3>Մեր Մասին</h3>
+                <p>
+                    Կայքը ստեղծվել է կրթական ռեսուրսների ներկայացման համար,
+                    ուսանողներին օգնելու ուսումնական նյութերը արագ և հարմար գտնելու նպատակով։
+                </p>
+            </div>
+
+            <div class="footer-col" id="contact">
+                <h3>Կապ</h3>
+                <ul class="contact-list">
+                    <li>📞 +374 95 700 180</li>
+                    <li>✉️ info@LearningR.am</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="subfooter">
+            <p>© 2025 Կրթական նախագիծ — Բոլոր իրավունքները պաշտպանված են.</p>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
